@@ -579,6 +579,7 @@ let trFile;
 makeDrop('tr-drop','tr-file',trLoad);
 function trLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('tr-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('tr-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('tr-error');
   trFile=file;
   const video=document.getElementById('tr-video');
@@ -632,6 +633,7 @@ let cmpCrf='28', cmpScale='720';
 makeDrop('cmp-drop','cmp-file',cmpLoad);
 function cmpLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('cmp-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('cmp-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('cmp-error');
   cmpFile=file;
   document.getElementById('cmp-fname').textContent=file.name;
@@ -688,6 +690,7 @@ let cvtFile, cvtFmt='mp4';
 makeDrop('cvt-drop','cvt-file',cvtLoad);
 function cvtLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('cvt-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('cvt-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('cvt-error');
   cvtFile=file;
   document.getElementById('cvt-fname').textContent=file.name;
@@ -753,6 +756,7 @@ let mtFile;
 makeDrop('mt-drop','mt-file',mtLoad);
 function mtLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('mt-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('mt-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('mt-error');
   mtFile=file;
   document.getElementById('mt-fname').textContent=file.name;
@@ -789,6 +793,7 @@ let auFile, auFmt='mp3';
 makeDrop('au-drop','au-file',auLoad);
 function auLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('au-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('au-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('au-error');
   auFile=file;
   document.getElementById('au-fname').textContent=file.name;
@@ -839,6 +844,7 @@ let smFile, smSpeed=0.5;
 makeDrop('sm-drop','sm-file',smLoad);
 function smLoad(file) {
   if(!file||!file.type.startsWith('video/'))return showErr('sm-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('sm-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('sm-error');
   smFile=file;
   document.getElementById('sm-fname').textContent=file.name;
