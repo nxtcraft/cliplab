@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VideoLab Guide — How to Trim, Compress & Convert Video Online Free (2024)</title>
+<meta name="description" content="Complete guide to VideoLab: trim video, compress video for WhatsApp/email, convert formats, slow motion, add audio, and extract MP3 — all free in your browser.">
+<link rel="canonical" href="https://nxtcraft.github.io/cliplab/guide/">
+<meta property="og:title" content="VideoLab Guide — Free Online Video Trimmer & Compressor">
+<meta property="og:description" content="Step-by-step guide for trimming, compressing, and converting video files online. No software, no upload — runs entirely in your browser.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://nxtcraft.github.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9EW10BJGW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R9EW10BJGW');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Compress a Video Online with VideoLab",
+  "description": "Step-by-step guide to reducing video file size in your browser using VideoLab — no upload, no software install.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open VideoLab and select the Video Compressor tab",
+      "text": "Go to VideoLab and click the 'Compress' tab. Wait for FFmpeg.wasm to load — a one-time ~25 MB download per session."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Upload your video file",
+      "text": "Drag and drop your video or click Browse Files. VideoLab supports MP4, MOV, AVI, MKV, WebM, and FLV input."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Choose a compression quality preset",
+      "text": "Select a quality preset: High (best quality, ~40% smaller), Medium (balanced, ~60% smaller), Low (smallest size, ~75% smaller), or Custom (enter CRF value directly)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Compress and download",
+      "text": "Click 'Compress Video'. FFmpeg encodes the video in your browser using H.264. The original and compressed sizes are shown when done. Download the compressed file."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is VideoLab really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, VideoLab is completely free — no sign-up, no watermarks, no file limits. Processing runs in your browser using FFmpeg.wasm. Your videos never leave your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What video formats does VideoLab support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VideoLab accepts MP4, MOV, AVI, MKV, WebM, and FLV as input. Output is typically MP4 (H.264) for maximum compatibility, with WebM available for web use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can VideoLab compress a video?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compression results depend on the original video's codec and content. Typical results: a 100 MB MP4 from a smartphone compresses to 20–40 MB at Medium quality with no visible degradation. Screen recordings with static content often compress by 80–90%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I compress a video for WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. WhatsApp has a 16 MB limit for video attachments. Use VideoLab's compressor with Medium or Low quality preset to bring your video under 16 MB. For longer videos, also trim unwanted sections first using the Trim tab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add slow motion to a video?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the Slow Motion tab in VideoLab. Upload your video, choose a speed factor (0.5× for half speed, 0.25× for quarter speed), and click Process. The audio pitch is preserved by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I extract audio (MP3) from a video?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the Extract Audio tab. Upload any video file, select MP3 or AAC as the output format, and click Extract. VideoLab strips the audio track without re-encoding it, so quality is lossless from the original."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "VideoLab Guide — How to Trim, Compress & Convert Video Online Free",
+  "description": "Complete guide to all VideoLab tools: Video Trimmer, Video Compressor, Format Converter, Slow Motion, Add Audio to Video, Mute Video, and Extract Audio.",
+  "author": {"@type": "Organization", "name": "NxtCraft"},
+  "publisher": {"@type": "Organization", "name": "NxtCraft", "url": "https://nxtcraft.github.io/"},
+  "mainEntityOfPage": "https://nxtcraft.github.io/cliplab/guide/"
+}
+</script>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Inter',BlinkMacSystemFont,sans-serif;background:#f0fdfa;color:#134e4a;line-height:1.65}
+nav{background:#fff;border-bottom:1px solid #99f6e4;padding:0 20px;height:54px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20}
+.logo{font-size:19px;font-weight:800;text-decoration:none;color:#134e4a}.logo span{color:#0d9488}
+.nav-link{font-size:13px;font-weight:600;color:#0d9488;text-decoration:none;border:1.5px solid #5eead4;padding:7px 14px;border-radius:8px;transition:all .15s}
+.nav-link:hover{background:#ccfbf1}
+.hero{background:linear-gradient(135deg,#ccfbf1 0%,#f0fdfa 100%);border-bottom:1px solid #99f6e4;padding:48px 20px 40px;text-align:center}
+.hero h1{font-size:28px;font-weight:800;line-height:1.3;margin-bottom:12px;color:#134e4a}
+.hero p{font-size:15px;color:#0f766e;max-width:560px;margin:0 auto 20px}
+.hero-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tag{font-size:12px;background:#ccfbf1;color:#0d9488;padding:4px 12px;border-radius:20px;font-weight:600}
+.container{max-width:860px;margin:0 auto;padding:40px 20px 60px}
+.toc{background:#fff;border:1.5px solid #99f6e4;border-radius:14px;padding:22px 24px;margin-bottom:40px}
+.toc h2{font-size:14px;font-weight:700;color:#0f766e;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+.toc ol{margin-left:18px}
+.toc li{margin-bottom:6px}
+.toc a{color:#0d9488;font-size:14px;font-weight:500;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+h2.section{font-size:21px;font-weight:800;margin-bottom:16px;padding-top:12px;color:#134e4a;border-top:2px solid #99f6e4}
+h3{font-size:16px;font-weight:700;margin:20px 0 10px;color:#0f766e}
+p{font-size:15px;margin-bottom:14px;color:#134e4a}
+.tool-card{background:#fff;border:1.5px solid #99f6e4;border-radius:14px;padding:22px 24px;margin-bottom:20px}
+.tool-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.tool-icon{font-size:28px}
+.tool-name{font-size:17px;font-weight:800;color:#134e4a}
+.tool-desc{font-size:13px;color:#0f766e}
+.steps-list{margin:14px 0;padding-left:0;list-style:none}
+.steps-list li{padding:10px 0 10px 36px;position:relative;border-bottom:1px solid #f0fdfa;font-size:14px}
+.steps-list li:last-child{border-bottom:none}
+.steps-list li::before{content:counter(step);counter-increment:step;position:absolute;left:0;top:10px;width:24px;height:24px;background:#0d9488;color:#fff;border-radius:50%;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.steps-list{counter-reset:step}
+table{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:14px}
+th{background:#ccfbf1;text-align:left;padding:10px 14px;font-weight:700;color:#0f766e;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+td{padding:10px 14px;border-bottom:1px solid #ccfbf1;color:#134e4a}
+tr:last-child td{border-bottom:none}
+.tip-box{background:#ccfbf1;border-left:4px solid #0d9488;border-radius:0 10px 10px 0;padding:14px 18px;margin:16px 0 20px;font-size:14px;color:#0f766e}
+.faq-item{border-bottom:1px solid #99f6e4;padding:18px 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-size:15px;font-weight:700;color:#134e4a;margin-bottom:8px}
+.faq-a{font-size:14px;color:#0f766e;line-height:1.65}
+.cta-box{background:linear-gradient(135deg,#0d9488,#14b8a6);border-radius:16px;padding:30px;text-align:center;color:#fff;margin-top:40px}
+.cta-box h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.cta-box p{font-size:14px;opacity:.9;margin-bottom:20px}
+.cta-btn{background:#fff;color:#0d9488;padding:12px 30px;border-radius:10px;font-size:14px;font-weight:800;text-decoration:none;display:inline-block;transition:transform .15s}
+.cta-btn:hover{transform:scale(1.03)}
+footer{text-align:center;padding:22px;font-size:12px;color:#0d9488;border-top:1px solid #99f6e4}
+footer a{color:#0d9488;text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:22px}.container{padding:28px 16px 48px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../" class="logo">Video<span>Lab</span></a>
+  <a href="../" class="nav-link">Open Tool</a>
+</nav>
+
+<div class="hero">
+  <h1>VideoLab Guide<br>Trim, Compress & Convert Video Free Online</h1>
+  <p>Everything you need to know about VideoLab's free video tools — trimmer, compressor, format converter, slow motion, add audio, mute, and audio extractor — all in your browser.</p>
+  <div class="hero-tags">
+    <span class="tag">No Upload</span>
+    <span class="tag">100% Free</span>
+    <span class="tag">No Signup</span>
+    <span class="tag">No Watermark</span>
+    <span class="tag">FFmpeg-Powered</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#how-videolab-works">How VideoLab Works</a></li>
+      <li><a href="#video-trimmer">Video Trimmer — Step by Step</a></li>
+      <li><a href="#video-compressor">Video Compressor — Reduce File Size</a></li>
+      <li><a href="#format-converter">Format Converter</a></li>
+      <li><a href="#slow-motion">Slow Motion Effect</a></li>
+      <li><a href="#add-audio">Add Audio to Video</a></li>
+      <li><a href="#extract-audio">Extract Audio (Video to MP3)</a></li>
+      <li><a href="#supported-formats">Supported Formats</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ol>
+  </div>
+
+  <h2 class="section" id="how-videolab-works">How VideoLab Works</h2>
+  <p>VideoLab uses <strong>FFmpeg.wasm</strong> — the industry-standard FFmpeg library compiled to WebAssembly — running entirely inside your browser tab. This means:</p>
+  <ul style="margin:0 0 14px 20px;font-size:15px;color:#134e4a">
+    <li style="margin-bottom:8px"><strong>Your videos never leave your device.</strong> There is no server involved after the initial page load.</li>
+    <li style="margin-bottom:8px"><strong>No watermarks</strong> — VideoLab adds nothing to your video output.</li>
+    <li style="margin-bottom:8px"><strong>No file size limits</strong> imposed by a server. File size is limited only by your device's RAM.</li>
+    <li style="margin-bottom:8px"><strong>Works offline</strong> once FFmpeg.wasm is cached by your browser's Service Worker.</li>
+  </ul>
+  <p>On first load, the browser downloads ~25 MB of WebAssembly. This takes 5–15 seconds and is cached for future visits. Processing time depends on your CPU — video tasks are more CPU-intensive than audio.</p>
+
+  <h2 class="section" id="video-trimmer">Video Trimmer — Step by Step</h2>
+  <p>Trim any video to a specific start and end time — to cut a clip, remove an intro, or extract a scene.</p>
+  <div class="tool-card">
+    <div class="tool-header">
+      <span class="tool-icon">✂️</span>
+      <div><div class="tool-name">Video Trimmer</div><div class="tool-desc">Cut video to any start and end time</div></div>
+    </div>
+    <ol class="steps-list">
+      <li>Open VideoLab and wait for FFmpeg.wasm to load (progress bar shown on first visit).</li>
+      <li>Click the <strong>Trim</strong> tab.</li>
+      <li>Drag and drop your video, or click <strong>Browse Files</strong>. Supported: MP4, MOV, AVI, MKV, WebM, FLV.</li>
+      <li>The video player appears. Play the video to find your desired start point. Click <strong>Set Start</strong> at the right moment, or type the time manually in <code>mm:ss</code> format.</li>
+      <li>Find your desired end point and click <strong>Set End</strong>, or type manually.</li>
+      <li>Click <strong>Trim Video</strong>. Processing time depends on the clip length and your CPU speed.</li>
+      <li>When done, the trimmed video plays in the preview player. Click <strong>Download</strong> to save.</li>
+    </ol>
+  </div>
+  <div class="tip-box">
+    <strong>Fast trim (stream copy):</strong> VideoLab uses FFmpeg's stream copy mode for trimming where possible — this means the video is NOT re-encoded, so it trims near-instantly with zero quality loss. Full re-encoding is only done when converting formats or applying effects.
+  </div>
+
+  <h2 class="section" id="video-compressor">Video Compressor — Reduce File Size</h2>
+  <p>Reduce video file size for WhatsApp, email, or storage. VideoLab compresses using H.264 with Constant Rate Factor (CRF) control.</p>
+
+  <table>
+    <thead>
+      <tr><th>Preset</th><th>CRF</th><th>Size Reduction</th><th>Quality</th><th>Best For</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>High</td><td>CRF 23</td><td>~30–40%</td><td>Near-original</td><td>Archiving, sharing with quality priority</td></tr>
+      <tr><td>Medium</td><td>CRF 28</td><td>~50–65%</td><td>Good</td><td>WhatsApp, email, social media</td></tr>
+      <tr><td>Low</td><td>CRF 35</td><td>~70–80%</td><td>Acceptable</td><td>Storage saving, previews</td></tr>
+      <tr><td>Custom</td><td>0–51</td><td>Varies</td><td>Varies</td><td>Fine-grained control</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box">
+    <strong>WhatsApp tip:</strong> WhatsApp limits video attachments to 16 MB. For a 1-minute 1080p video (~100 MB), use Medium preset to bring it to ~25–35 MB, then trim 20–30 seconds of non-essential content to fit under 16 MB. For longer videos, use the Low preset.
+  </div>
+
+  <h3>CRF Explained</h3>
+  <p>CRF (Constant Rate Factor) is a quality-based compression setting used by H.264 and H.265 encoders. Lower CRF = higher quality + larger file. Higher CRF = lower quality + smaller file. CRF 18 is visually lossless; CRF 51 is the worst quality.</p>
+
+  <h2 class="section" id="format-converter">Format Converter</h2>
+  <p>Convert video between MP4, MOV, AVI, MKV, and WebM formats.</p>
+  <table>
+    <thead>
+      <tr><th>Format</th><th>Codec</th><th>Best For</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>MP4 (H.264)</strong></td><td>H.264</td><td>Universal — works on all devices, browsers, social media</td></tr>
+      <tr><td><strong>WebM</strong></td><td>VP9</td><td>Web embedding, YouTube-alternative, open-source</td></tr>
+      <tr><td><strong>MOV</strong></td><td>H.264/ProRes</td><td>Apple ecosystem, iMovie, Final Cut Pro</td></tr>
+      <tr><td><strong>AVI</strong></td><td>Various</td><td>Windows legacy, older software compatibility</td></tr>
+      <tr><td><strong>MKV</strong></td><td>Various</td><td>High-quality containers, multiple audio tracks</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <strong>Recommendation:</strong> When in doubt, convert to MP4 (H.264). It is the most widely supported format across Android, iOS, Windows, Mac, WhatsApp, Instagram, and YouTube.
+  </div>
+
+  <h2 class="section" id="slow-motion">Slow Motion Effect</h2>
+  <p>Apply a slow motion effect to any video clip. VideoLab uses FFmpeg's <code>setpts</code> and <code>atempo</code> filters to slow down both video and audio.</p>
+  <table>
+    <thead>
+      <tr><th>Speed Factor</th><th>Effect</th><th>Example Use</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>0.5×</td><td>Half speed (2× slower)</td><td>Sports highlights, dramatic effect</td></tr>
+      <tr><td>0.25×</td><td>Quarter speed (4× slower)</td><td>Action sequences, physics demos</td></tr>
+      <tr><td>0.1×</td><td>10× slower</td><td>Extreme slow motion, scientific analysis</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <strong>Frame rate note:</strong> True slow motion requires high frame rate source video (60fps or 120fps). Slowing down a 30fps video creates motion blur and stuttering. For the smoothest slow motion, use video shot at 60fps or higher as your input.
+  </div>
+
+  <h2 class="section" id="add-audio">Add Audio to Video</h2>
+  <p>Replace or add an audio track to any video. Use cases include:</p>
+  <ul style="margin:0 0 14px 20px;font-size:15px;color:#134e4a">
+    <li style="margin-bottom:6px">Add background music to a silent video</li>
+    <li style="margin-bottom:6px">Replace poor audio with a cleaned-up recording</li>
+    <li style="margin-bottom:6px">Add a voiceover to a screen recording</li>
+    <li style="margin-bottom:6px">Create a lyric video by combining an image video with an audio track</li>
+  </ul>
+  <ol class="steps-list">
+    <li>Click the <strong>Add Audio</strong> tab.</li>
+    <li>Upload your video file.</li>
+    <li>Upload your audio file (MP3, WAV, AAC, OGG).</li>
+    <li>Choose whether to <strong>Replace</strong> the existing audio or <strong>Mix</strong> with it.</li>
+    <li>Click <strong>Apply</strong> and download the result.</li>
+  </ol>
+
+  <h2 class="section" id="extract-audio">Extract Audio (Video to MP3)</h2>
+  <p>Extract the audio track from any video file as an MP3 or AAC file.</p>
+  <ol class="steps-list">
+    <li>Click the <strong>Extract Audio</strong> tab (or the Mute tab — both show audio extraction).</li>
+    <li>Upload your video file.</li>
+    <li>Select output format: MP3 for maximum compatibility, AAC for better quality at the same size.</li>
+    <li>Click <strong>Extract Audio</strong>. The audio is separated without re-encoding when possible.</li>
+    <li>Download the audio file.</li>
+  </ol>
+  <div class="tip-box">
+    <strong>Lossless extraction:</strong> When a video's audio track is already in MP3 or AAC format (most MP4 files), VideoLab extracts it without re-encoding — meaning zero quality loss. Re-encoding only happens when you request a format different from the source track.
+  </div>
+
+  <h2 class="section" id="supported-formats">Supported Video Formats</h2>
+  <table>
+    <thead>
+      <tr><th>Format</th><th>Extension</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MP4</td><td>.mp4</td><td>Most common, H.264 or H.265 codec — universal support</td></tr>
+      <tr><td>MOV</td><td>.mov</td><td>Apple QuickTime format — common from iPhones</td></tr>
+      <tr><td>AVI</td><td>.avi</td><td>Older Windows container — large files, broad codec support</td></tr>
+      <tr><td>MKV</td><td>.mkv</td><td>Open container — supports any codec, often used for HD films</td></tr>
+      <tr><td>WebM</td><td>.webm</td><td>Web-native format — VP8/VP9 codec, small size</td></tr>
+      <tr><td>FLV</td><td>.flv</td><td>Flash video — legacy format from pre-HTML5 era</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section" id="faq">Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">Is VideoLab really free?</div>
+    <div class="faq-a">Yes, VideoLab is completely free — no sign-up, no watermarks, no file limits. All processing runs in your browser using FFmpeg.wasm. Your videos never leave your device.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How much can VideoLab compress a video?</div>
+    <div class="faq-a">Compression results depend on the original video's codec and content. Typical results: a 100 MB MP4 from a smartphone compresses to 20–40 MB at Medium quality with no visible degradation. Screen recordings with static content often compress by 80–90%.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I compress a video for WhatsApp?</div>
+    <div class="faq-a">Yes. WhatsApp has a 16 MB limit for video attachments. Use VideoLab's compressor with the Medium or Low quality preset to bring your video under 16 MB. For longer videos, also trim unwanted sections first using the Trim tab.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Why is video processing slow?</div>
+    <div class="faq-a">Video encoding is CPU-intensive. Processing speed depends on your device's CPU speed and the video's resolution and length. A 1-minute 1080p video may take 2–5 minutes to compress on a mid-range laptop. Trimming (stream copy) is near-instant because it skips encoding.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I extract audio (MP3) from a video?</div>
+    <div class="faq-a">Yes. Use the Extract Audio tab. Upload any video file, select MP3 or AAC as the output format, and click Extract. VideoLab strips the audio track without re-encoding when possible, so quality is preserved from the original.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Does VideoLab add a watermark?</div>
+    <div class="faq-a">No. VideoLab adds no watermarks, logos, or any modifications to your video output. The output is a clean, unmodified version of your input (minus the edits you chose). This is because all processing happens on your device — there's no server to inject anything.</div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Ready to Edit Your Video?</h3>
+    <p>Free, in your browser — trim, compress, convert, slow motion, add audio, and extract MP3.</p>
+    <a href="../" class="cta-btn">Open VideoLab</a>
+  </div>
+
+  <p style="text-align:center;margin-top:28px;font-size:13px">
+    <a href="https://nxtcraft.github.io/" style="color:#0d9488;text-decoration:none">NxtCraft Tools</a> &nbsp;·&nbsp;
+    <a href="https://nxtcraft.github.io/audiolab/" style="color:#0d9488;text-decoration:none">AudioLab</a> &nbsp;·&nbsp;
+    <a href="https://nxtcraft.github.io/imglab/" style="color:#0d9488;text-decoration:none">ImgLab</a> &nbsp;·&nbsp;
+    <a href="https://nxtcraft.github.io/pdflab/" style="color:#0d9488;text-decoration:none">PDFLab</a>
+  </p>
+
+</div>
+
+<footer>
+  <p>&copy; 2024 <a href="https://nxtcraft.github.io/">NxtCraft</a> — Free Online Tools</p>
+</footer>
+
+</body>
+</html>
