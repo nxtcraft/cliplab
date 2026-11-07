@@ -919,6 +919,7 @@ let aaVFile=null, aaAFile=null, aaMode='replace', aaDur='shortest';
 makeDrop('aa-vdrop','aa-vfile',aaVLoad);
 function aaVLoad(file){
   if(!file||!file.type.startsWith('video/'))return showErr('aa-error','Please select a video file.');
+  if(file.size>500*1024*1024)return showErr('aa-error','File too large (max 500 MB). Large videos may crash the browser — try a shorter clip.');
   hideErr('aa-error');
   aaVFile=file;
   document.getElementById('aa-vname').textContent=file.name;
